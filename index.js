@@ -108,4 +108,5 @@ function reset() {
   resultR.innerText='Select an option'
   displayResult.textContent = `Player:${playerScore} - Computer:${computerScore}`;
   turnsElement.textContent=turns
+  showR.textContent="";
 }
