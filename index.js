@@ -69,7 +69,7 @@ function updateScore(winner) {
   } else if (winner == 'computer') {
     computerScore++;
   }
-  displayResult.textContent = `Player:${playerScore} - Computer:${computerScore}`;
+  displayResult.textContent = `Player::${playerScore} - Computer:${computerScore}`;
 }
 
 function checkTurns()
