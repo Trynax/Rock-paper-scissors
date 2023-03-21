@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="index.js"></script>
+  <style>
+    #div{
+      text-align: center;
+    }
+    .button{
+      color: white;
+      padding: 12px;
+      background-color: skyblue;
+    }
+    .reset{
+      padding: 12px;
+      background-color: red;
+      color: aliceblue;
+      border: none;
+    }
+  </style>
+  <script src="index.js" defer></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock Papper Scissors</title>
+  <title>Rock Paper Scissors</title>
 </head>
 <body>
-  
+  <div id="div">
+    <button class="button" onclick="choose('rock')">Rock</button>
+    <button class="button" onclick="choose('paper')">Paper</button>
+    <button class="button" onclick="choose('scissors')">Scissors</button>
+    <p id="para"></p>
+    <p>Turns: <span class="turns">0</span></p>
+    <button onclick="reset()" class="reset">Reset</button>
+    <h2 id="showR"></h2>
+
+  </div>
+
+
 </body>
 </html>
